@@ -12,9 +12,7 @@ $(function() {
 function atualizaTamanhoFrase() {
     var frase = $(".frase").text();
     var numPalavras  = frase.split(" ").length;
-    var tamanhoFrase = $("#tamanho-frase");
-
-    tamanhoFrase.text(numPalavras);
+    $("#tamanho-frase").text(numPalavras);
 }
 
 function inicializaContadores() {
