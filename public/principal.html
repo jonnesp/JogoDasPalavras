@@ -5,6 +5,8 @@
     <title>Alura Typer</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
             </li>
             <li>
                 <i class="small material-icons icones">query_builder</i>
-                <span id="tempo-digitacao">10</span> segundos
+                <span id="tempo-digitacao">2</span> segundos
             </li>
         </ul>
 
@@ -40,6 +42,17 @@
             </a>
             <a id="botao-frase-buscar" class="btn-floating btn-large waves-effect waves-light cyan">
                 <i class="material-icons">repeat_one</i>
+            </a>
+            <div class="select-usuarios">
+                <select id="usuarios">
+                    <option value="Joao">Joao</option>
+                    <option value="Joao">Rafael</option>
+                    <option value="Joao">Douglas</option>
+                    <option value="Joao">Miguel</option>
+                </select>
+            </div>
+            <a id="botao-sync" class="tooltip btn-floating btn-large waves-effect waves-light yellow" title="Sincronizado com sucesso!">
+                <i class="material-icons">swap_vert</i>
             </a>
             <input type="number" min="0" id="numero-buscar">
         </div>
@@ -71,6 +84,8 @@
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
     <script src="js/frase.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
 
 </body>
 </html>
